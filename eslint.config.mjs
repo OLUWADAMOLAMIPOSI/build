@@ -9,9 +9,15 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
+export default [
+  // Next.js recommended rules
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // Custom rules
   {
+    rules: {
+      "@next/next/no-img-element": "off", // ✅ disable <img> warning
+    },
     ignores: [
       "node_modules/**",
       ".next/**",
@@ -21,5 +27,3 @@ const eslintConfig = [
     ],
   },
 ];
-
-export default eslintConfig;
