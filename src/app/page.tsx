@@ -177,7 +177,7 @@ export default function Home() {
               <h1 className=" mt-2 font-semibold text-blue-900">Student Hostel Construction Project</h1>
             </div>
             <div className="text-black bg-white rounded-lg shadow hover:shadow-lg overflow-hidden p-5">
-              <img src="/pro2.jpg" alt="project" className="rounded-md "/>
+              <img src="/pro3.jpg" alt="project" className="rounded-md "/>
               <h1 className=" mt-2 font-semibold text-blue-900">Retail Shopping Mall Project</h1>
             </div> 
              <div className="text-black bg-white rounded-lg shadow hover:shadow-lg overflow-hidden p-5">

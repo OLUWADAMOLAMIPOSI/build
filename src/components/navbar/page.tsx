@@ -19,7 +19,7 @@ const [isOpen, setIsOpen] = useState(false);
         <h1 className="text-2xl font-bold">BuildPro</h1>
 
         <div className="hidden md:flex gap-6 text-sm font-medium">
-         <Link href="/" className="hover:text-yellow-400">Home</Link>
+         <Link href="/home" className="hover:text-yellow-400">Home</Link>
          <Link href="/about" className="hover:text-yellow-400">About</Link>
          <a href="/service" className="hover:text-yellow-400">Services</a>
           <a href="/project" className="hover:text-yellow-400">Projects</a>
@@ -44,7 +44,7 @@ const [isOpen, setIsOpen] = useState(false);
 
       {isOpen && (
         <div className="md:hidden bg-blue-800 text-white flex flex-col gap-4 px-6 py-4 ">
-          <a href="#home" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Home</a>
+          <a href="/home" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Home</a>
           <a href="/about" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">About</a>
           <a href="/service" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Services</a>
           <a href="/project" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Projects</a>
