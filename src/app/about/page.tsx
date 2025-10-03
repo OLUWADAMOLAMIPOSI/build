@@ -3,9 +3,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-git add .
-git commit -m " replaced <a> with Next.js <Link> in "
-git push
 
 const Aboutpage = () => {
   return (
