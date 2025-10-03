@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const Footerpage = () => {
   return (
@@ -14,9 +15,9 @@ const Footerpage = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="/about" className="hover:text-yellow-400">About</a></li>
-              <li><a href="/service" className="hover:text-yellow-400">Services</a></li>
-              <li><a href="/project" className="hover:text-yellow-400">Projects</a></li>
+              <li><Link href="/about" className="hover:text-yellow-400">About</Link></li>
+              <li><Link href="/service" className="hover:text-yellow-400">Services</Link></li>
+              <li><Link href="/project" className="hover:text-yellow-400">Projects</Link></li>
             </ul>
           </div>
           <div>

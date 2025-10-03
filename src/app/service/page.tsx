@@ -1,11 +1,12 @@
 "use client";
 
+import Link from "next/link";
+
 export default function ServicesPage() {
   return (
     <main className="bg-white text-gray-900">
        <header className="relative bg-gray-50">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-20">
-        {/* Left Side Text */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Ready to work together?
@@ -27,7 +28,6 @@ export default function ServicesPage() {
       </div>
     </header>
 
-      {/* Core Values */}
       <section className="py-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div className="p-6 shadow-lg hover:shadow-xl transition">
           <div className="mb-4 text-4xl">📐</div>
@@ -128,7 +128,7 @@ export default function ServicesPage() {
           Let’s build something amazing. Reach out to start your project today.
         </p>
         <button className="bg-yellow-500 text-white px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
-          <a href="/contact"> Build a Project</a>
+          <Link href="/contact"> Build a Project</Link>
         </button>
       </section>
     </main>

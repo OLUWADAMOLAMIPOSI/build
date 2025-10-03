@@ -20,18 +20,18 @@ const NavBarpage = () => {
           <div className="hidden md:flex gap-6 text-sm font-medium">
             <Link href="/" className="hover:text-yellow-400">Home</Link>
             <Link href="/about" className="hover:text-yellow-400">About</Link>
-            <a href="/service" className="hover:text-yellow-400">Services</a>
-            <a href="/project" className="hover:text-yellow-400">Projects</a>
-            <a href="/blog" className="hover:text-yellow-400">Blog</a>
-            <a href="/contact" className="hover:text-yellow-400">Contact</a>
+            <Link href="/service" className="hover:text-yellow-400">Services</Link>
+            <Link href="/project" className="hover:text-yellow-400">Projects</Link>
+            <Link href="/blog" className="hover:text-yellow-400">Blog</Link>
+            <Link href="/contact" className="hover:text-yellow-400">Contact</Link>
           </div>
 
-          <a
+          <Link
             href="/contact"
             className="hidden md:inline-block bg-yellow-500 text-blue-900 px-4 py-2 rounded-md font-medium hover:bg-yellow-400"
           >
             Get A Quote
-          </a>
+          </Link>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -43,19 +43,19 @@ const NavBarpage = () => {
 
         {isOpen && (
           <div className="md:hidden bg-blue-800 text-white flex flex-col gap-4 px-6 py-4">
-            <a href="/" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Home</a>
-            <a href="/about" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">About</a>
-            <a href="/service" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Services</a>
-            <a href="/project" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Projects</a>
-            <a href="/blog" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Blog</a>
-            <a href="/contact" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Contact</a>
-            <a
+            <Link href="/" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Home</Link>
+            <Link href="/about" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">About</Link>
+            <Link href="/service" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Services</Link>
+            <Link href="/project" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Projects</Link>
+            <Link href="/blog" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Blog</Link>
+            <Link href="/contact" onClick={() => setIsOpen(false)} className="cursor-pointer hover:text-yellow-400">Contact</Link>
+            <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
               className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md font-medium hover:bg-yellow-400 text-center"
             >
               Get A Quote
-            </a>
+            </Link>
           </div>
         )}
       </header>

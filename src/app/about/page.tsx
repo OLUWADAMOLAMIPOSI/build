@@ -2,6 +2,10 @@
 "Use client"
 
 import Image from "next/image"
+import Link from "next/link"
+git add .
+git commit -m " replaced <a> with Next.js <Link> in "
+git push
 
 const Aboutpage = () => {
   return (
@@ -141,14 +145,13 @@ const Aboutpage = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
       <section className="py-20 text-center text-black  bg-white">
         <h2 className="text-3xl font-bold">Let’s Build Together</h2>
         <p className="mt-4 max-w-xl mx-auto">
           Contact us today and let’s turn your construction ideas into reality.
         </p>
         <button className="mt-6 px-6 py-3  bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-400">
-          <a href="/contact">Get In Touch</a>
+          <Link href="/contact">Get In Touch</Link>
         </button>
       </section>
       </>

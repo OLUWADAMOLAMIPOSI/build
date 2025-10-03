@@ -1,5 +1,6 @@
 // app/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,18 +20,18 @@ export default function Home() {
               high-quality construction solutions. Let's bring your vision to life.
             </p>
             <div className="flex gap-4">
-              <a
+              <Link
                 href="/about"
                 className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md font-medium hover:bg-yellow-400"
               >
                 Learn More
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#quote"
                 className="border border-yellow-500 text-white px-4 py-2 rounded-md font-medium hover:bg-yellow-500 hover:text-blue-900"
               >
                 Request A Quote
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -92,12 +93,12 @@ export default function Home() {
             clients across Nigeria. With a team of skilled professionals, we ensure
             that every project exceeds expectations.
           </p>
-          <a
+          <Link
             href="#services"
             className="bg-blue-900 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-800"
           >
             Discover More
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -105,12 +106,12 @@ export default function Home() {
         <h2 className="text-xl md:text-2xl font-semibold mb-4">
           Providing Personalized and High Quality Services
         </h2>
-        <a
+        <Link
           href="/contact"
           className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-yellow-400"
         >
           Request A Quote
-        </a>
+        </Link>
       </section>
 
       <section id="services" className="bg-gray-100 py-20">
@@ -131,12 +132,12 @@ export default function Home() {
                   We provide top-notch {service.toLowerCase()} solutions tailored to
                   your needs.
                 </p>
-                <a
+                <Link
                   href="/service"
                   className="inline-block mt-4 bg-yellow-500 text-blue-900 px-4 py-2 rounded-md font-medium hover:bg-yellow-400"
                 >
                   Read More
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -218,36 +219,36 @@ export default function Home() {
               <h3 className="font-semibold text-blue-900 mb-2">
                     Best for any industrial & business solution
                   </h3>
-                  <a
+                  <Link
                     href="/blog"
                     className="text-sm text-yellow-600 font-medium hover:underline"
                   >
                     Read More →
-                  </a>
+                  </Link>
             </div>
              <div className="text-black bg-white rounded-lg shadow hover:shadow-lg overflow-hidden p-5">
               <img src="/b2.jpg" alt="project" className="rounded-md "/>
               <h3 className="font-semibold text-blue-900 mb-2">
                     Best for any industrial & business solution
                   </h3>
-                  <a
+                  <Link
                     href="/blog"
                     className="text-sm text-yellow-600 font-medium hover:underline"
                   >
                     Read More →
-                  </a>
+                  </Link>
             </div> 
             <div className="text-black bg-white rounded-lg shadow hover:shadow-lg overflow-hidden p-5">
               <img src="/b3.jpg" alt="project" className="rounded-md "/>
               <h3 className="font-semibold text-blue-900 mb-2">
                     Best for any industrial & business solution
                   </h3>
-                  <a
+                  <Link
                     href="/blog"
                     className="text-sm text-yellow-600 font-medium hover:underline"
                   >
                     Read More →
-                  </a>
+                  </Link>
             </div>
             </div>
       </section>
